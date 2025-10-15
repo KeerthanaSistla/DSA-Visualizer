@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
-import { BFSVisualizer } from "@/components/BFSVisualizer";
-import { FibonacciVisualizer } from "@/components/FibonacciVisualizer";
+import { GraphVisualizerContainer } from "@/components/GraphVisualizerContainer";
+import { DPVisualizerContainer } from "@/components/DPVisualizerContainer";
 import { Network, Brain } from "lucide-react";
 
 const Index = () => {
@@ -38,11 +38,11 @@ const Index = () => {
             </TabsList>
 
             <TabsContent value="graph" className="mt-0">
-              <BFSVisualizer />
+              <GraphVisualizerContainer />
             </TabsContent>
 
             <TabsContent value="dp" className="mt-0">
-              <FibonacciVisualizer />
+              <DPVisualizerContainer />
             </TabsContent>
           </Tabs>
         </Card>
