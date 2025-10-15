@@ -117,8 +117,8 @@ export const EditDistanceVisualizer = () => {
                     return (
                       <td
                         key={j}
-                        className={`border border-border p-3 text-center transition-all duration-500 ${
-                          isCurrent ? "bg-current/30 scale-110 font-bold" : "bg-background"
+                        className={`border border-border p-3 text-center ${
+                          isCurrent ? "bg-current/30 font-bold" : "bg-background"
                         }`}
                       >
                         {cell}
